@@ -9,7 +9,7 @@
 #include "stddef.h"
 #include "stdlib.h"
 #include "stdio.h"
-#include "boolean.h"
+#include "13519216-boolean.h"
 
 #define Nil NULL
 
@@ -26,7 +26,7 @@ typedef struct tCOURSE
 typedef struct tCourseList
 {
     int masuk ;
-    boolean visitedNodes;
+    boolean visitedNode;
     address2 course ;
     address1 requisites;
     address1 next ;
@@ -43,7 +43,7 @@ typedef struct {
 #define First(L) ((L).First)
 #define Requisites(P) ((P)->requisites)
 #define Masuk(P) ((P)->masuk)
-#define Visited(P) ((P)->visitedNodes)
+#define Visited(P) ((P)->visitedNode)
 
 
 /****************** Manajemen Memori ******************/

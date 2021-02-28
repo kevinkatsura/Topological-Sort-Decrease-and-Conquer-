@@ -3,7 +3,7 @@
 // Tugas Kecil 2 Strategi Algoritma
 // Penerapan Algoritma Decrease And Conquer dengan Topological Sort
 
-#include "data.h"
+#include "13519216-ADT.h"
 
 // ALOKASI CourseList dan assign nilainya dengan COURSE yang telah dialokasi
 address1 AlokasiListCourse (address2 theCourse){

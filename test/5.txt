@@ -1,0 +1,7 @@
+Fisika, Matematika.
+Matematika, Kimia, Agama, Seni.
+Kimia, Olahraga.
+Olahraga, Agama, Seni.
+Agama, Biologi, Seni.
+Seni, Biologi.
+Biologi.

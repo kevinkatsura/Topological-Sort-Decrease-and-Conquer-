@@ -1,0 +1,6 @@
+Math,Physics.
+Chemistry,Physics.
+Physics.
+Art,Religion,entrepreneurship.
+entrepreneurship,Math,Religion.
+Religion,Math,Chemistry.

@@ -5,7 +5,7 @@
 
 #include "stdio.h"
 #include "string.h"
-#include "data.c"
+#include "13519216-ADT.c"
 
 //DEKLARASI PROCEDURE DecreaseNConquer
 void DecreaseNConquer (address1 A1, int i); // Fungsi ini didefinisikan di bawah fungsi main.
@@ -21,14 +21,14 @@ int main(){
     char path[100]; // Penyimpanan path ke file ( 'data_uji/' + namaFile )
 
     // Input Nama File di folder 'data_uji' tanpa menggunakan ekstensi .txt
-    printf("Masukkan nama file pada folder 'data_uji' (tanpa ekstensi .txt) : ");
+    printf("Masukkan nama file pada folder 'test' (tanpa ekstensi .txt) : ");
     scanf("%123s",namaFile); // input namafile dan assign ke 'namaFile'
 
     //concat nama file dengan ekstensi .txt
     strcat(namaFile,".txt");
 
     // assign ('data_uji/' + nama file) ke dalam path
-    snprintf(path, sizeof(path), "data_uji/%s", namaFile);
+    snprintf(path, sizeof(path), "../test/%s", namaFile);
 
     //Buka file dan assign ke dalam variabel 'inputFile'
     inputFile=fopen(path,"r");
@@ -188,6 +188,7 @@ int main(){
 
     // Menutup file yang telah dibuka dengan fopen
     fclose(inputFile);
+    return 0 ;
 }
 
 

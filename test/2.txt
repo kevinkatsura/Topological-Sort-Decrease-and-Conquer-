@@ -1,0 +1,8 @@
+Ekonomi, Matematika, Sosiologi.
+Matematika, Kimia, Fisika.
+Agama.
+Kimia, Seni.
+Seni.
+Sejarah, Agama.
+Fisika, Kimia.
+Sosiologi, Sejarah, Agama.
