@@ -1,5 +1,10 @@
-#ifndef DATA
-#define DATA
+// 13519216 Kevin Katsura Dani Sitanggang
+// K04
+// Tugas Kecil 2 Strategi Algoritma
+// Penerapan Algoritma Decrease And Conquer dengan Topological Sort
+
+#ifndef _DATA_
+#define _DATA_
 
 #include "stddef.h"
 #include "stdlib.h"
