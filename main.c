@@ -193,6 +193,7 @@ int main(){
 
 
 // >>>>>>>>>>>  FUNGSI DECREASE AND CONQUER  <<<<<<<<<<<
+
 /*  KONSEP NYA SAMA SEPERTI SPEK. 
     DecreaseNConquer akan dipanggil seiring dengan penyempitan lingkup List yang dikunjungi
 */
