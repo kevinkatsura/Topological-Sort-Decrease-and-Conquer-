@@ -46,7 +46,6 @@ int main(){
     int jumlahCourse = 0; // 
     address1 A1,A2 ;
     address2 P2,P3,PFirst ;
-    
 
     // - >>>> KONSEP PROGRAM <<<< -
     /*
@@ -58,7 +57,7 @@ int main(){
     */
 
     // Perintah 'getc' akan membaca isi dari file huruf demi huruf
-    CC = getc(inputFile); // Pembacaan karakter pertama dalam file
+    CC = fgetc(inputFile); // Pembacaan karakter pertama dalam file
     do{
         if (CC==','){ // Kondisi ketika karakter yang dibaca dari file adalah koma (,)
             jumlahCourse++ ; // jumlahCourse ini akan digunakan untuk mengecek apakah dialokasikan 'CourseList' yang baru (ADT CourseList dapat di lihat dalam 'data.h')
@@ -94,15 +93,16 @@ int main(){
             count = 0 ;
             jumlahCourse = 0 ;
             baris++;
+            CC = fgetc(inputFile);
         }
         else{ // Jika yang karakter yang dibaca yang terdapat pada CC bukan titik maupun koma 
             buffer2[count] = CC; // Assign karakter yang terdapat dalam CC ke array buffer2 karakter demi karakter
             count++ ;
         }
-        CC = getc(inputFile); // Membaca karakter selanjutnya dalam file
+        CC = fgetc(inputFile); // Membaca karakter selanjutnya dalam file
         if (CC == '\n' || CC == ' ') 
         {
-            CC = getc(inputFile); // Jika yang dibaca adalah Newline atau SPASI maka akan diabaikan dan membaca karakter selanjutnya dalam file.
+            CC = fgetc(inputFile); // Jika yang dibaca adalah Newline atau SPASI maka akan diabaikan dan membaca karakter selanjutnya dalam file.
         }
     }while(CC != EOF); // Alokasi ini akan selesai jika CC adalah EOF
     
@@ -148,7 +148,6 @@ int main(){
 
     // MAIN SECTION 
     // DECREASE AND CONQUER ( TOPOLOGICAL SORT )
-    
     // Mencari Course dengan Busur yang masuk adalah 0
     A1 = First(L); // Akses Elemen pertama pada CourseList
     while (A1 != Nil){ // Akan berhenti sampai A1 == Nil
